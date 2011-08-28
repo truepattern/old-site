@@ -72,7 +72,7 @@ section {
   display: block;
 }
 body {
-  font: 62.5% / 1.5 Helvetica, Arial, "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  font: 62.5% / 1.5 "Lucida Grande", Helvetica, Arial, "Lucida Sans", Tahoma, Verdana, sans-serif;
   text-align: center;
   background: #000;
 }
@@ -164,22 +164,34 @@ acronym {
 .css-table {
   width: 100%;
   display: table;
+  padding-bottom: 1.5em;
 }
 .css-table .two-column {
+  background: #e0ffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
   display: table-row;
 }
 .css-table .two-column .cell {
+  padding: 5px 15px 6px 20px;
   display: table-cell;
   vertical-align: top;
   width: 50%;
+}
+.css-table .two-column .cell h2 {
+  font-size: 180%;
 }
 .css-table .two-column .cell * {
   width: 90%;
 }
 .css-table .three-column {
   display: table-row;
+  padding: 1.5em;
 }
 .css-table .three-column .cell {
+  padding: 5px 15px 6px 20px;
   display: table-cell;
   width: 33.33333%;
 }
@@ -198,6 +210,7 @@ header {
 }
 header nav {
   width: 960px;
+  height: 65px;
   text-align: right;
   margin-left: auto;
   margin-right: auto;
@@ -212,20 +225,22 @@ header nav ul li {
   margin-left: 1%;
 }
 header nav ul li a {
-  background: #c38ec7;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  background: #fff;
+  font-size: 130%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
   display: inline-block;
   padding: 5px 15px 6px;
-  color: #fff;
+  color: #474b57;
   text-decoration: none;
   position: relative;
   cursor: pointer;
 }
 header nav ul li a:hover {
-  background-color: #db0d5f;
+  background-color: #474b57;
+  color: #fff;
 }
 footer {
   color: #666;
